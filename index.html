@@ -2,25 +2,28 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/main.css">
     <title>Foodmap</title>
   </head>
   <body>
-    <section class="container-fluid">
+
+    <main class="container">
 
       <section class="row">
-        <section class="col-md-8 col-xs-12">
+        <section class="col-md-12 col-xs-12">
           <h1>Foodmap</h1>
         </section>
       </section>
 
       <section class="row">
-        <section class="col-md-8 col-xs-12">
+        <section class="col-md-12 col-xs-12">
           <iframe
-            width="90%"
-            height="auto"
+            width="100%"
+            height="300vh"
             frameborder="0" style="border:0"
             src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCeNpNKdbBiNLHroVoa5YfZ6p9WcO12uO4&q=Space+Tonalá+30,+Roma+Nte.,+06700+Ciudad+de+México,+CDMX" allowfullscreen>
           </iframe>
@@ -28,28 +31,51 @@
       </section>
 
       <section class="row">
-        <section class="col-md-8 col-xs-12">
-          <h3>Comida cerca de ti</h3>
-          <select class="" name="select">
-            <option value="calificacion">Número de estrellas</option>
+        <section class="col-md-12 col-xs-12">
+          <h2>Comida cerca de ti</h2>
+          <select class="selectpicker">
+            <option value="">Filtrar restaurantes</option>
+            <optgroup label="Calificación">
+              <option>Sin reseñas</option>
+              <option>4 estrellas</option>
+              <option>5 estrellas</option>
+            </optgroup>
+            <optgroup label="Zona">
+              <option>Condesa/Roma</option>
+              <option>Juárez</option>
+              <option>Zona Rosa/Cuauhtemoc</option>
+            </optgroup>
           </select>
         </section>
       </section>
 
       <section class="row">
-        <section class="col-md-8 col-xs-12">
+        <section class="col-md-3 col-xs-3 restaurant-container" data-toggle="modal" data-target="#modal-restaurant">
           <div>
-            <h4>Rosseta</h4>
-            <p>Colima #166, Col. Roma,06700 Ciudad de México</p>
-            <img src="assets/images/rosseta-restaurant.jpg" alt="rosseta-restaurant">
-
+            <h3>Rosseta</h3>
+            <img class="img-responsive" src="assets/images/rosseta-restaurant.jpg" alt="rosseta-restaurant">
           </div>
-
         </section>
-
       </section>
+    </main>
 
-    </section>
+    <div class="modal fade" tabindex="-1" role="dialog" id="modal-restaurant">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h2 class="modal-title">Rosseta</h2>
+          </div>
+          <div class="modal-body">
+            <img class="img-responsive" src="assets/images/sartoria-restaurant.jpg" alt="">
+            <p class="h3">Colima #166, Col. Roma,06700 Ciudad de México</p>
+            <p class="h4">4 estrellas</p>
+            <p class="h4">Cocinas: <span></span>Mediterránea</p>
+            <p class="h4">Rango de precios: <span>más de MXN500</span> </p>
+          </div>
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
 
     <script type="text/javascript" src="js/app.js"></script>
   </body>
