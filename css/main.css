@@ -6,11 +6,12 @@ body {
   padding: 0;
   text-align: center;
 }
-/*
+
 main {
   display: none;
-} */
+}
 
+body > section > section > section > h1,
 body > main > section:nth-child(1) > section > h1 {
   font-size: 7em;
   font-weight: 300;
@@ -27,10 +28,15 @@ body > main > section:nth-child(4) {
   margin: 5% auto;
 }
 
-body > main > section:nth-child(3) > section > select {
+body > main > div {
   height: 50px;
   margin: 5% auto;
-  width: 80%;
+}
+
+body > main > div > mdiv > div {
+  /* height: 50px; */
+  margin: auto;
+  /* width: 90%;   */
 }
 
 .restaurant-container {
@@ -40,5 +46,5 @@ body > main > section:nth-child(3) > section > select {
 
 .splash {
   width: 100%;
-  margin: 50% auto;
+  margin: 50vh auto;
 }
