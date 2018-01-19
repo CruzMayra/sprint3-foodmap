@@ -6,16 +6,21 @@ body {
   padding: 0;
   text-align: center;
 }
+/*
+main {
+  display: none;
+} */
 
 body > main > section:nth-child(1) > section > h1 {
   font-size: 7em;
   font-weight: 300;
-  margin: 5% 0;
+  margin-bottom: 15%;
 }
 
 body > main > section:nth-child(3) > section > h2 {
   font-size: 3.5em;
   font-weight: 300;
+  margin: 5% auto;
 }
 
 body > main > section:nth-child(4) {
@@ -24,11 +29,16 @@ body > main > section:nth-child(4) {
 
 body > main > section:nth-child(3) > section > select {
   height: 50px;
-  margin: 2% auto;
+  margin: 5% auto;
   width: 80%;
 }
 
 .restaurant-container {
   border: 1px solid white;
   padding: 2%;
+}
+
+.splash {
+  width: 100%;
+  margin: 50% auto;
 }
