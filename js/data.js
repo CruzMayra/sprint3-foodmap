@@ -1,209 +1,209 @@
 var data = [
-  restaurant = {
+   {
     'nombre' : "Rosseta",
     'direccion' : "Colima #166, Col. Roma,06700 Ciudad de México",
     'calificacion' : "4 estrellas",
     'zona' : "Condesa/Roma",
     'cocinas' : "Mediterránea",
-    'rango de precio' : "más de MXN500",
-    'imagen' : "../assets/images/rosseta-restaurant.jpg"
+    'precios' : "más de MXN500",
+    'imagen' : "assets/images/rosseta-restaurant.jpg"
   },
-  restaurant = {
+   {
     'nombre' : "Sartoria",
     'direccion' : "Orizaba #42, Roma Norte, 06700 Ciudad de México",
     'calificacion' : "4 estrellas",
     'zona' : "Condesa/Roma",
     'cocinas' : ["Italiana", "Mediterránea", "Mexicana contemporánea"],
-    'rango de precio' : "De MXN310 a MXN500",
-    'imagen' : "../assets/images/sartoria-restaurant.jpg"
+    'precios' : "De MXN310 a MXN500",
+    'imagen' : "assets/images/sartoria-restaurant.jpg"
   },
-  restaurant = {
+   {
     'nombre' : "Meroma",
     'direccion' : "Colima #150, Col. Roma Norte, 06700 Ciudad de México",
     'calificacion' : "5 estrellas",
     'zona' : "Condesa/Roma",
     'cocinas' : ["Internacional", "Mediterránea", "Mexicana contemporánea"],
-    'rango de precio' : "más de MXN500",
-    'imagen' : "../assets/images/meroma-restaurant.jpg"
+    'precios' : "más de MXN500",
+    'imagen' : "assets/images/meroma-restaurant.jpg"
   },
-  restaurant = {
+   {
     'nombre' : "Havre 77",
     'direccion' : "Havre 77, Col. Juárez, 06600 Ciudad de México",
     'calificacion' : "4 estrellas",
     'zona' : "Juárez",
     'cocinas' : ["Francesa", "Pescados y Mariscos"],
-    'rango de precio' : "más de MXN500",
-    'imagen' : "../assets/images/havre-77-restaurant.jpg"
+    'precios' : "más de MXN500",
+    'imagen' : "assets/images/havre-77-restaurant.jpg"
   },
-  restaurant = {
+   {
     'nombre' : "The Capital Grille - Mexico",
     'direccion' : "Paseo de la Reforma 250 - Edificio Capital Reforma, Col. Juarez, 06600 Ciudad de México",
     'calificacion' : "4 estrellas",
     'zona' : "Zona Rosa/Cuauhtemoc",
     'cocinas' : "Cortes de carne",
-    'rango de precio' : "más de MXN500",
-    'imagen' : "../assets/images/capital-grille-restaurant.jpg"
+    'precios' : "más de MXN500",
+    'imagen' : "assets/images/capital-grille-restaurant.jpg"
   },
-  restaurant = {
+   {
     'nombre' : "Nueve Nueve Bistro Mexicano",
     'direccion' : "Alvaro Obregón 99, Col. Roma Norte, 06700 Ciudad de México",
     'calificacion' : "4 estrellas",
     'zona' : "Condesa/Roma",
     'cocinas' : "Mexicana contemporánea",
-    'rango de precio' : "De MXN310 a MXN500",
-    'imagen' : "../assets/images/nueve-nueve-bistro-mexicano-restaurant.jpg"
+    'precios' : "De MXN310 a MXN500",
+    'imagen' : "assets/images/nueve-nueve-bistro-mexicano-restaurant.jpg"
   },
-  restaurant = {
+   {
     'nombre' : "KYO",
     'direccion' : "Havre 77, Col. Juárez, 06700 Ciudad de México",
     'calificacion' : "4 estrellas",
     'zona' : "Zona Rosa/Cuauhtemoc",
     'cocinas' : "Japonesa",
-    'rango de precio' : "más de MXN500",
-    'imagen' : "../assets/images/kyo-restaurant.jpg"
+    'precios' : "más de MXN500",
+    'imagen' : "assets/images/kyo-restaurant.jpg"
   },
-  restaurant = {
+   {
     'nombre' : "Huset",
     'direccion' : "Colima #256, Col. Roma, 06700 Ciudad de México",
     'calificacion' : "4 estrellas",
     'zona' : "Condesa/Roma",
     'cocinas' : "Cocina Campestre",
-    'rango de precio' : "más de MXN500",
-    'imagen' : "../assets/images/huset-restaurant.jpg"
+    'precios' : "más de MXN500",
+    'imagen' : "assets/images/huset-restaurant.jpg"
   },
-  restaurant = {
+   {
     'nombre' : "Sonora Grill Prime - Roma",
     'direccion' : "Durango 205 Primer piso, Col. Roma, 06500 Ciudad de México",
     'calificacion' : "4 estrellas",
     'zona' : "Condesa/Roma",
     'cocinas' : ["Cortes de carne", "Mexicana"],
-    'rango de precio' : "De MXN310 a MXN500",
-    'imagen' : "../assets/images/sonora-grill-prime-restaurant.jpg"
+    'precios' : "De MXN310 a MXN500",
+    'imagen' : "assets/images/sonora-grill-prime-restaurant.jpg"
   },
-  restaurant = {
+   {
     'nombre' : "Farina - Roma",
     'direccion' : "Chihuahua 139, Col. Roma, 06700 Ciudad de México",
     'calificacion' : "4 estrellas",
     'zona' : "Condesa/Roma",
     'cocinas' : "Italiana",
-    'rango de precio' : "De MXN310 a MXN500",
-    'imagen' : "../assets/images/farina-roma-restaurant.jpg"
+    'precios' : "De MXN310 a MXN500",
+    'imagen' : "assets/images/farina-roma-restaurant.jpg"
   },
-  restaurant = {
+   {
     'nombre' : "Cantina La No. 20 - El Angel",
     'direccion' : "Paseo de la Reforma #342, Col. Juarez, 06500 Ciudad de México",
     'calificacion' : "4 estrellas",
     'zona' : "Zona Rosa/Cuauhtemoc",
     'cocinas' : ["Mexicana", "Mexicana contemporánea"],
-    'rango de precio' : "De MXN310 a MXN500",
-    'imagen' : "../assets/images/cantina-la-no-20-restaurant.jpg"
+    'precios' : "De MXN310 a MXN500",
+    'imagen' : "assets/images/cantina-la-no-20-restaurant.jpg"
   },
-  restaurant = {
+   {
     'nombre' : "Cafe Nin",
     'direccion' : "HAVRE #69, Col. Juarez, 06600 Ciudad de México",
     'calificacion' : "4 estrellas",
     'zona' : "Zona Rosa/Cuauhtemoc",
     'cocinas' : "Mediterránea",
-    'rango de precio' : "De MXN310 a MXN500",
-    'imagen' : "../assets/images/cafe-nin-restaurant.jpg"
+    'precios' : "De MXN310 a MXN500",
+    'imagen' : "assets/images/cafe-nin-restaurant.jpg"
   },
-  restaurant = {
+   {
     'nombre' : "Campobaja",
     'direccion' : "Colima #124, Roma Norte, 06700 Ciudad de México",
     'calificacion' : "4 estrellas",
     'zona' : "Condesa/Roma",
     'cocinas' : ["Mexicana regional", "Norteña", "Mexicana"],
-    'rango de precio' : "De MXN310 a MXN500",
-    'imagen' : "../assets/images/campobaja-restaurant.jpg"
+    'precios' : "De MXN310 a MXN500",
+    'imagen' : "assets/images/campobaja-restaurant.jpg"
   },
-  restaurant = {
+   {
     'nombre' : "La Tecla - Roma",
     'direccion' : "Durango 186-A, Roma, 06700 Ciudad de México",
     'calificacion' : "4 estrellas",
     'zona' : "Condesa/Roma",
     'cocinas' : ["Mexicana", "Mexicana contemporánea"],
-    'rango de precio' : "De MXN310 a MXN500",
-    'imagen' : "../assets/images/la-tecla-roma-restaurant.jpg"
+    'precios' : "De MXN310 a MXN500",
+    'imagen' : "assets/images/la-tecla-roma-restaurant.jpg"
   },
-  restaurant = {
+   {
     'nombre' : "Bellopuerto - Florencia",
     'direccion' : "Florencia #30, esquina con Hamburgo Col. Juarez, 06600 Ciudad de México",
     'calificacion' : "4 estrellas",
     'zona' : "Zona Rosa/Cuauhtemoc",
     'cocinas' : ["Pescados y Mariscos", "Comida reconfortante", "Café / gastrobar"],
-    'rango de precio' : "De MXN310 a MXN500",
-    'imagen' : "../assets/images/bellopuerto-florencia-restaurant.jpg"
+    'precios' : "De MXN310 a MXN500",
+    'imagen' : "assets/images/bellopuerto-florencia-restaurant.jpg"
   },
-  restaurant = {
+   {
     'nombre' : "Don Pollo - D.F.",
     'direccion' : "Paseo de la Reforma 264, Col. Juarez, 06600 Ciudad de México",
     'calificacion' : "3 estrellas",
     'zona' : "Zona Rosa/Cuauhtemoc",
     'cocinas' : "Mexicana",
-    'rango de precio' : "Hasta MXN300",
-    'imagen' : "../assets/images/don-pollo-restaurant.jpg"
+    'precios' : "Hasta MXN300",
+    'imagen' : "assets/images/don-pollo-restaurant.jpg"
   },
-  restaurant = {
+   {
     'nombre' : "La Mansion - Marriott Reforma",
     'direccion' : "Paseo de La Reforma 276, Col. Juárez, 06600 Ciudad de México",
     'calificacion' : "4 estrellas",
     'zona' : "Zona Rosa/Cuauhtemoc",
     'cocinas' : ["Cortes finos", "Cortes de carne"],
-    'rango de precio' : "De MXN310 a MXN500",
-    'imagen' : "../assets/images/la-mansion-restaurant.jpg"
+    'precios' : "De MXN310 a MXN500",
+    'imagen' : "assets/images/la-mansion-restaurant.jpg"
   },
-  restaurant = {
+   {
     'nombre' : "Restaurante ALMARA",
     'direccion' : "VARSOVIA ESQUINA HAMBURGO, EN LA COLONIA JUAREZ. A UNA CUADRA DEL ANGEL DE LA INDEPENDENCIA, Col. Juárez, 06600 Ciudad de México",
     'calificacion' : "4 estrellas",
     'zona' : "Zona Rosa/Cuauhtemoc",
     'cocinas' : "Mediterránea",
-    'rango de precio' : "De MXN310 a MXN500",
-    'imagen' : "../assets/images/almara-restaurant.jpg"
+    'precios' : "De MXN310 a MXN500",
+    'imagen' : "assets/images/almara-restaurant.jpg"
   },
-  restaurant = {
+   {
     'nombre' : "Blanco Colima",
     'direccion' : "Colima 168, Col. Roma Norte, 06700 Ciudad de México",
     'calificacion' : "4 estrellas",
     'zona' : "Condesa/Roma",
     'cocinas' : ["Mundial", "Internacional", "Vegetariana", "Japonesa"],
-    'rango de precio' : "más de MXN500",
-    'imagen' : "../assets/images/blanco-colima-restaurant.jpg"
+    'precios' : "más de MXN500",
+    'imagen' : "assets/images/blanco-colima-restaurant.jpg"
   },
-  restaurant = {
+   {
     'nombre' : "Loup Bar",
     'direccion' : "Calle Tonala 23, Colonia Roma Norte, 06700 Ciudad de México",
     'calificacion' : "5 estrellas",
     'zona' : "Condesa/Roma",
     'cocinas' : "Bar de Vinos",
-    'rango de precio' : "más de MXN500",
-    'imagen' : "../assets/images/loup-bar-restaurant.jpg"
+    'precios' : "más de MXN500",
+    'imagen' : "assets/images/loup-bar-restaurant.jpg"
   },
-  restaurant = {
+   {
     'nombre' : "Meson Amberes",
     'direccion' : "Amberes #64, Col. Juarez, 06600 Ciudad de México",
     'calificacion' : "Sin reseñas",
     'zona' : "Zona Rosa/Cuauhtemoc",
     'cocinas' : ["Mexicana", "Internacional"],
-    'rango de precio' : "De MXN310 a MXN500",
-    'imagen' : "../assets/images/meson-amberes-restaurant.jpg"
+    'precios' : "De MXN310 a MXN500",
+    'imagen' : "assets/images/meson-amberes-restaurant.jpg"
   },
-  restaurant = {
+   {
     'nombre' : "Oxacobeo",
     'direccion' : "Colima #194, Col. Roma Norte Del. Cuauhtémoc, 06700 Ciudad de México",
     'calificacion' : "4 estrellas",
     'zona' : "Condesa/Roma",
     'cocinas' : "Española",
-    'rango de precio' : "De MXN310 a MXN500",
-    'imagen' : "../assets/images/oxacobeo-restaurant.jpg"
+    'precios' : "De MXN310 a MXN500",
+    'imagen' : "assets/images/oxacobeo-restaurant.jpg"
   },
-  restaurant = {
+   {
     'nombre' : "Esquina 44",
     'direccion' : "Varsovia 44, Col. Juárez, 06600 Ciudad de México",
     'calificacion' : "4 estrellas",
     'zona' : "Zona Rosa/Cuauhtemoc",
     'cocinas' : ["Internacional", "Española"],
-    'rango de precio' : "De MXN310 a MXN500",
-    'imagen' : "../assets/images/esquina-44-restaurant.jpg"
+    'precios' : "De MXN310 a MXN500",
+    'imagen' : "assets/images/esquina-44-restaurant.jpg"
   }
 ];

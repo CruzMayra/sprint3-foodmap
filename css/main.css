@@ -34,14 +34,23 @@ body > main > div {
 }
 
 body > main > div > mdiv > div {
-  /* height: 50px; */
   margin: auto;
-  /* width: 90%;   */
 }
 
-.restaurant-container {
+#restaurants-container > section {
   border: 1px solid white;
   padding: 2%;
+  margin: 3%;
+}
+
+#restaurants-container > section > img {
+  width: 100%;
+  height: 30%;
+}
+
+#modal-restaurant > div > div > div.modal-body > img {
+  height: 45vh;
+  margin: 0 auto;
 }
 
 .splash {
