@@ -53,6 +53,12 @@ body > main > div > mdiv > div {
   margin: 0 auto;
 }
 
+#modal-restaurant > div > div > div.modal-footer > button {
+  background-color: #D07C32;
+  color: #2B2B2B;
+  font-weight: 400;
+}
+
 .splash {
   width: 100%;
   margin: 50vh auto;

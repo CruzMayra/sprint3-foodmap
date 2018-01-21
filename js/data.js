@@ -4,7 +4,7 @@ var data = [
     'direccion' : "Colima #166, Col. Roma,06700 Ciudad de México",
     'calificacion' : "4 estrellas",
     'zona' : "Condesa/Roma",
-    'cocinas' : "Mediterránea",
+    'cocinas' : ["Mediterránea"],
     'precios' : "más de MXN500",
     'imagen' : "assets/images/rosseta-restaurant.jpg"
   },
@@ -40,7 +40,7 @@ var data = [
     'direccion' : "Paseo de la Reforma 250 - Edificio Capital Reforma, Col. Juarez, 06600 Ciudad de México",
     'calificacion' : "4 estrellas",
     'zona' : "Zona Rosa/Cuauhtemoc",
-    'cocinas' : "Cortes de carne",
+    'cocinas' : ["Cortes de carne"],
     'precios' : "más de MXN500",
     'imagen' : "assets/images/capital-grille-restaurant.jpg"
   },
@@ -49,7 +49,7 @@ var data = [
     'direccion' : "Alvaro Obregón 99, Col. Roma Norte, 06700 Ciudad de México",
     'calificacion' : "4 estrellas",
     'zona' : "Condesa/Roma",
-    'cocinas' : "Mexicana contemporánea",
+    'cocinas' : ["Mexicana contemporánea"],
     'precios' : "De MXN310 a MXN500",
     'imagen' : "assets/images/nueve-nueve-bistro-mexicano-restaurant.jpg"
   },
@@ -58,7 +58,7 @@ var data = [
     'direccion' : "Havre 77, Col. Juárez, 06700 Ciudad de México",
     'calificacion' : "4 estrellas",
     'zona' : "Zona Rosa/Cuauhtemoc",
-    'cocinas' : "Japonesa",
+    'cocinas' : ["Japonesa"],
     'precios' : "más de MXN500",
     'imagen' : "assets/images/kyo-restaurant.jpg"
   },
@@ -67,7 +67,7 @@ var data = [
     'direccion' : "Colima #256, Col. Roma, 06700 Ciudad de México",
     'calificacion' : "4 estrellas",
     'zona' : "Condesa/Roma",
-    'cocinas' : "Cocina Campestre",
+    'cocinas' : ["Cocina Campestre"],
     'precios' : "más de MXN500",
     'imagen' : "assets/images/huset-restaurant.jpg"
   },
@@ -85,7 +85,7 @@ var data = [
     'direccion' : "Chihuahua 139, Col. Roma, 06700 Ciudad de México",
     'calificacion' : "4 estrellas",
     'zona' : "Condesa/Roma",
-    'cocinas' : "Italiana",
+    'cocinas' : ["Italiana"],
     'precios' : "De MXN310 a MXN500",
     'imagen' : "assets/images/farina-roma-restaurant.jpg"
   },
@@ -103,7 +103,7 @@ var data = [
     'direccion' : "HAVRE #69, Col. Juarez, 06600 Ciudad de México",
     'calificacion' : "4 estrellas",
     'zona' : "Zona Rosa/Cuauhtemoc",
-    'cocinas' : "Mediterránea",
+    'cocinas' : ["Mediterránea"],
     'precios' : "De MXN310 a MXN500",
     'imagen' : "assets/images/cafe-nin-restaurant.jpg"
   },
@@ -139,7 +139,7 @@ var data = [
     'direccion' : "Paseo de la Reforma 264, Col. Juarez, 06600 Ciudad de México",
     'calificacion' : "3 estrellas",
     'zona' : "Zona Rosa/Cuauhtemoc",
-    'cocinas' : "Mexicana",
+    'cocinas' : ["Mexicana"],
     'precios' : "Hasta MXN300",
     'imagen' : "assets/images/don-pollo-restaurant.jpg"
   },
@@ -157,7 +157,7 @@ var data = [
     'direccion' : "VARSOVIA ESQUINA HAMBURGO, EN LA COLONIA JUAREZ. A UNA CUADRA DEL ANGEL DE LA INDEPENDENCIA, Col. Juárez, 06600 Ciudad de México",
     'calificacion' : "4 estrellas",
     'zona' : "Zona Rosa/Cuauhtemoc",
-    'cocinas' : "Mediterránea",
+    'cocinas' : ["Mediterránea"],
     'precios' : "De MXN310 a MXN500",
     'imagen' : "assets/images/almara-restaurant.jpg"
   },
@@ -175,7 +175,7 @@ var data = [
     'direccion' : "Calle Tonala 23, Colonia Roma Norte, 06700 Ciudad de México",
     'calificacion' : "5 estrellas",
     'zona' : "Condesa/Roma",
-    'cocinas' : "Bar de Vinos",
+    'cocinas' : ["Bar de Vinos"],
     'precios' : "más de MXN500",
     'imagen' : "assets/images/loup-bar-restaurant.jpg"
   },
@@ -193,7 +193,7 @@ var data = [
     'direccion' : "Colima #194, Col. Roma Norte Del. Cuauhtémoc, 06700 Ciudad de México",
     'calificacion' : "4 estrellas",
     'zona' : "Condesa/Roma",
-    'cocinas' : "Española",
+    'cocinas' : ["Española"],
     'precios' : "De MXN310 a MXN500",
     'imagen' : "assets/images/oxacobeo-restaurant.jpg"
   },
