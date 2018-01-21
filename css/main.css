@@ -33,14 +33,23 @@ body > main > div {
   margin: 5% auto;
 }
 
-body > main > div > mdiv > div {
+body > main > div > div > div {
   margin: auto;
+}
+
+address {
+  font-variant: small-caps;
 }
 
 #restaurants-container > section {
   border: 1px solid white;
+  box-sizing: content-box;
   padding: 2%;
-  margin: 3%;
+  margin: 1%;
+}
+
+#restaurants-container > section:hover {
+  opacity: 0.5;
 }
 
 #restaurants-container > section > img {

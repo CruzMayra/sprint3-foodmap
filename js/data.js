@@ -127,7 +127,7 @@ var data = [
   },
    {
     'nombre' : "Bellopuerto - Florencia",
-    'direccion' : "Florencia #30, esquina con Hamburgo Col. Juarez, 06600 Ciudad de México",
+    'direccion' : "Florencia #30, esquina Hamburgo Col. Juarez, 06600 Ciudad de México",
     'calificacion' : "4 estrellas",
     'zona' : "Zona Rosa/Cuauhtemoc",
     'cocinas' : ["Pescados y Mariscos", "Comida reconfortante", "Café / gastrobar"],
@@ -154,7 +154,7 @@ var data = [
   },
    {
     'nombre' : "Restaurante ALMARA",
-    'direccion' : "VARSOVIA ESQUINA HAMBURGO, EN LA COLONIA JUAREZ. A UNA CUADRA DEL ANGEL DE LA INDEPENDENCIA, Col. Juárez, 06600 Ciudad de México",
+    'direccion' : "Varsovia esquina Hamburgo, Col. Juárez, 06600 Ciudad de México",
     'calificacion' : "4 estrellas",
     'zona' : "Zona Rosa/Cuauhtemoc",
     'cocinas' : ["Mediterránea"],

@@ -6,35 +6,28 @@ var $filterInput = $('#searh-input');
 function loadPage() { // función que centraliza al resto de las funciones
   loadSplashView();
   loadMainView();
-  getRestaurantInformation(data);
+  $('#restaurants-container').append(data.map(getRestaurantInHtml));
   $filterInput.keyup(filterRestaurants)
 }
 
 function loadSplashView() { // función para mostrar la vista splash por tres segundos
   setTimeout(function() {
-      $(".splash").fadeOut(1500);
+    $(".splash").fadeOut(1500);
   },3000);
 }
 
 function loadMainView() { // función que muestra la vista principal pasado la vista splash
   setTimeout(function() {
-      $("main").fadeIn(1500);
+    $("main").fadeIn(1500);
   },3000);
 }
 
-function getRestaurantInformation(data){ // funcion para acceder a la data
-  for( var index = 0; index < data.length; index++) {
-    var restaurant = getRestaurantInHtml(data[index], index);
-    $('#restaurants-container').append(restaurant);
-  }
-}
-
-function getRestaurantInHtml(restaurant, index){ // función para mostrar los restaurantes "más cercanos" en el html
+function getRestaurantInHtml(restaurant){ // función para mostrar los restaurantes "más cercanos" en el html
 
   var nameRestaurant = restaurant.nombre;
   var imagenRestaurant = restaurant.imagen;
   var $nearbyRestaurant = $('<section />');
-  var $nameNearbyRestaurant = $('<h5 />');
+  var $nameNearbyRestaurant = $('<h6 />');
   var $imagenNearbyRestaurant = $('<img />');
 
   $nearbyRestaurant.addClass('col-md-3 col-xs-3');
@@ -63,30 +56,25 @@ $('#modal-restaurant').on('show.bs.modal', function (event) { // función para c
   modal.find('.imagen').attr('src', restaurant.imagen);
   modal.find('.direccion').text(restaurant.direccion);
   modal.find('.calificacion').text(restaurant.calificacion);
-  modal.find('.cocinas').text(restaurant.cocinas);
+  modal.find('.cocinas').text(restaurant.cocinas.join(', '));
   modal.find('.precios').text(restaurant.precios);
 })
 
 function filterRestaurants(){
     var searchRestaurant = $filterInput.val().toLowerCase();
+    $('#restaurants-container').empty();
     if($filterInput.val().trim().length > 0) {
-      var filteredRestaurants = data.filter(function(restaurant) {
+      $('#restaurants-container').append(data.filter(function(restaurant) {
         var nombreMatches = restaurant.nombre.toLowerCase().indexOf(searchRestaurant) >= 0
         var cocinasMatches = restaurant.cocinas.join(',').toLowerCase().indexOf(searchRestaurant) >= 0
         var calificacionMatches = restaurant.calificacion.toLowerCase().indexOf(searchRestaurant) >= 0
         var zonaMatches = restaurant.zona.toLowerCase().indexOf(searchRestaurant) >= 0
         var preciosMatches = restaurant.precios.toLowerCase().indexOf(searchRestaurant) >= 0
-        return nombreMatches || cocinasMatches
-      }
-    )
-    $('#restaurants-container').empty();
-    filteredRestaurants.forEach(function(restaurant,index){
-      $('#restaurants-container').append(getRestaurantInHtml(restaurant,index));
-      // getRestaurantInformation(data);
-    })
-  } else {
-    $('#restaurants-container').empty();
+        return nombreMatches || cocinasMatches || calificacionMatches || zonaMatches || preciosMatches
+      }).map(getRestaurantInHtml))
+      $('#restaurants-container:empty').html('<p class="h1">Lo sentimos, no encontramos coincidencias <i class="fa fa-frown-o" aria-hidden="true"></i></p>');
+  }
+  else {
     $('#restaurants-container').append(data.map(getRestaurantInHtml));
-    console.log(filteredRestaurants);
   }
 }
