@@ -27,10 +27,10 @@ function getRestaurantInHtml(restaurant){ // función para mostrar los restauran
   var nameRestaurant = restaurant.nombre;
   var imagenRestaurant = restaurant.imagen;
   var $nearbyRestaurant = $('<section />');
-  var $nameNearbyRestaurant = $('<h6 />');
+  var $nameNearbyRestaurant = $('<h5 />');
   var $imagenNearbyRestaurant = $('<img />');
 
-  $nearbyRestaurant.addClass('col-md-3 col-xs-3');
+  $nearbyRestaurant.addClass('col-md-3 col-xs-11');
   $nearbyRestaurant.attr('data-toggle','modal');
   $nearbyRestaurant.attr('data-target', '#modal-restaurant');
   $nearbyRestaurant.attr('data-nombre', nameRestaurant);
